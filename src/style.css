@@ -1,0 +1,77 @@
+h1 {
+  color: #02475e;
+  font-size: 35px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+h5 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: -30px;
+  color: #de8971;
+}
+p {
+  text-align: center;
+  margin-top: 0px;
+  color: #de8971;
+}
+
+.weather-app {
+  border: solid 1px #185adb;
+  border-radius: 10px;
+  width: 600px;
+  padding: 25px;
+  margin: 20px;
+  background-color: #cee5d0;
+  line-height: 46px;
+}
+
+.weather-today {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+}
+.temperature-today {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #92a8d0;
+  border-radius: 10px;
+  line-height: 30px;
+  padding-bottom: 6px;
+  width: 100px;
+}
+button:hover {
+  background-color: #92a8d0;
+  color: blue;
+  transition: ease-in-out 200ms;
+  border: 1px solid #92a8d0;
+  border-radius: 5px;
+}
+input {
+  border-radius: 20px;
+  line-height: 20px;
+  width: 300px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+  border: 1px solid;
+  margin-top: 0px;
+  background-color: transparent;
+}
+.next {
+  border-top: 1px solid #f7d8d7;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: -30px;
+  text-align: left;
+}

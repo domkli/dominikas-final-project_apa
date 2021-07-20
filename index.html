@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+   
+    <title>WeatherApp</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app">
+    <div class="container">
+    
+      <form id="search-form">
+        <div.class = "row">
+         <div.class =  "col-10">
+        <input
+          type="search"
+          id="city-input"
+          placeholder="Let´s check weather in your city" 
+          class="btn btn "  
+        />
+
+         </div.class = "col-3">
+      </form>
+      <button>Search</button>
+      <button id="current-location-button"></button>
+
+      <h1  id="Barcelona"></h1>
+      <br />   
+      <li>Humidity: <span id="humidity">77</span>%</li>
+      <li>Precipitation: <span id="precipitation">77</span>%</li>
+      <li>Wind: <span id="wind">77</span>%</li>
+      <li>Description: <span id="description"></span></li>
+      <div id="weather" class="weather-temperature"></div>
+      <div id="currentLocationButton"> </div>
+      <div id="name"></div>
+      
+<h5 id="current-date">Saturday, 12:25</h5>
+<p class="weather-today">⛅</p>
+<ul class="temperature-today">
+
+    <ul class="temperature-today">
+        <li>18°C  /  5°C</li>
+      </ul>
+  <strong id= "temperature"> </strong>
+</ul>
+
+<hr class="next" />
+
+         
+<div class="row row-cols-6">
+    <div class="col">
+      <strong> Tue</strong>
+      <div class="row">
+        <div class="col-1 condition">⛅️</div>
+        <div class="col-2">20°C 11°C</div>
+      </div>
+    </div>
+    <div class="col">
+      <strong> Wed</strong>
+      <div class="row">
+        <div class="col-1 condition">⛅</div>
+        <div class="col-2">21°C 11°C</div>
+      </div>
+    </div>
+    <div class="col">
+      <strong> Thu</strong>
+      <div class="row">
+        <div class="col-1 condition">☀</div>
+        <div class="col-2">17°C 7°C</div>
+      </div>
+    </div>
+    <div class="col">
+      <strong> Fri</strong>
+      <div class="row">
+        <div class="col-1 condition">⛅</div>
+        <div class="col-2">23°C 12°C</div>
+      </div>
+    </div>
+    <div class="col">
+      <strong> Sat</strong>
+      <div class="row">
+        <div class="col-1 condition">☀</div>
+        <div class="col-2">19°C 9°C</div>
+      </div>
+    </div>
+
+    <div class="col">
+        <strong> Sun</strong>
+        <div class="row">
+          <div class="col-1 condition">☀</div>
+          <div class="col-2">19°C 9°C</div>
+        </div>
+      </div>
+  </div>
+
+  <br />
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+
+    <p><strong>   👩🏼‍💻 Coded by Dominika Klim  🙋‍‍</strong></p>
+    
+  </body>
+</html>
