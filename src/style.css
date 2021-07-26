@@ -14,7 +14,7 @@ h5 {
   color: #de8971;
 }
 p {
-  text-align: center;
+  text-align: left;
   margin-top: 0px;
   color: #de8971;
 }
@@ -27,6 +27,7 @@ p {
   margin: 20px;
   background-color: #cee5d0;
   line-height: 46px;
+  text-align: left;
 }
 
 .weather-today {
@@ -38,6 +39,7 @@ p {
   text-align: center;
   list-style: none;
   padding: 0;
+  font-size: 30px;
 }
 
 button {
@@ -55,6 +57,7 @@ button:hover {
   border: 1px solid #92a8d0;
   border-radius: 5px;
 }
+
 input {
   border-radius: 20px;
   line-height: 20px;
