@@ -23,19 +23,19 @@ let days = [
 
 currentTime.innerHTML = `${days[day]} ${hours}:${minutes}`;
 
-
-function getForecast(coordinates){
+function getForecast(coordinates) {
   console.log(coordinates);
-   let apiKey = "c22d7cfa34c632413da8b22d306863b3";
+  let apiKey = "c22d7cfa34c632413da8b22d306863b3";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayForecast);
 }
 
-function displayForecast (response){
-  console.log(response.data.daily);
+function displayForecast(response) {
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#forecast");
-forecastElement.innerHTML = "Forecast";
+  forecastElement.innerHTML = "Forecast";
 }
 
 function displayTemperature(response) {
@@ -44,8 +44,6 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let cityElement = document.querySelector("#name");
-
-
 
   console.log(response.data);
   let celsiusTemperature = response.data.main.temp;
@@ -56,11 +54,6 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   cityElement.innerHTML = response.data.name;
 }
-
-
-
-getForecast(response.data.coor)
-
 
 
 function search(city) {
@@ -91,9 +84,5 @@ form.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-
-
-
-
 
 search("Barcelona");
